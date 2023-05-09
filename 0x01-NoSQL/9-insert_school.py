@@ -1,10 +1,7 @@
-#!/usr/bin/env python3 
- """ MongoDB insert """ 
-  
-  
- def insert_school(mongo_collection, **kwargs): 
-     """function that inserts in school collection a document""" 
-     if len(kwargs) == 0: 
-         return None 
-     return mongo_collection.insert(kwargs)
-	
+#!/usr/bin/env python3
+""" MongoDB Operations with Python using pymongo """
+
+
+def insert_school(mongo_collection, **kwargs):
+    """ Inserts a new document in a collection based on kwargs """
+    return mongo_collection.insert(kwargs)
